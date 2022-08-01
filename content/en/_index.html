@@ -1,81 +1,87 @@
 +++
-title = "Goldydocs"
-linkTitle = "Goldydocs"
+title = "KubeWharf"
+linkTitle = "KubeWharf"
 
 +++
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" color="orange" >}}
+
+{{<blocks/cover title="KubeWharf" image_anchor="center" color="dark">}}
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
-		Download <i class="fab fa-github ml-2 "></i>
-	</a>
-	<p class="lead mt-5">Porridge temperature assessment - in the cloud!</p>
-	{{< blocks/link-down color="info" >}}
+  <p class="lead mt-5">The Enhanced Toolkit for Kubernetes</p>
+  <a
+    class="btn btn-lg btn-primary mr-3 mb-4"
+    href="#"
+  >
+    Get Started <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+  </a>
+  <a
+    class="btn btn-lg btn-secondary mr-3 mb-4"
+    href="#"
+  >
+    Contribute <i class="fas fa-pencil-alt ml-2"></i>
+  </a>
+  <div class="mx-auto mt-5">
+    {{<blocks/link-down color="light">}}
+  </div>
 </div>
-{{< /blocks/cover >}}
+{{</blocks/cover>}}
 
-
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
-
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example to create your own real websites with [Docsy](https://docsy.dev))
-{{% /blocks/lead %}}
-
-{{< blocks/section color="dark" >}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-
-{{< blocks/section >}}
-<div class="col">
-<h1 class="text-center">This is the second Section</h1>
+<div id="overview">
+	<div class="contain">
+		<h4 class="section-head">What is KubeWharf?</h4>
+		<p> The KubeWharf project is set of projects to improve Kubernetes's stability and performance </p> <img src="/docs/images/homepage/bytedance.png" class="card-img-top" draggable="false" style="padding: 1rem;width: 280px" alt="ByteDance Logo" /> </div>
 </div>
-
-{{< /blocks/section >}}
-
-
-
-{{< blocks/section >}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-{{< blocks/section >}}
-
-<div class="col-12">
-<h1 class="text-center">This is another Section</h1>
+<div id="projects">
+	<div class="contain">
+		<h4 class="section-head" style="text-align: center;padding-top: 3em;padding-bottom: -1em;">Projects</h4>
+		<section id="pageContent" style="padding-top:2rem;">
+			<div class="card-deck">
+				<div class="card border-primary-dark"> <img src="/docs/images/homepage/kubebrain.png" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="KubeBrain Logo" />
+					<div class="card-body bg-primary-dark">
+						<h5 class="card-title text-white section-head">KubeBrain</h5>
+						<p class="card-text text-white"> A High Performance Metadata System for Kubernetes. Documents Link </p>
+					</div>
+				</div>
+				<div class="card border-primary-dark"> <img src="/docs/images/homepage/kubezoo.png" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="KubeZoo Logo" />
+					<div class="card-body bg-primary-dark">
+						<h5 class="card-title text-white section-head">
+            KubeZoo
+          </h5>
+						<p class="card-text text-white"> A Lightweight Kubernetes Multi-Tenancy Gateway </p>
+					</div>
+				</div>
+				<div class="card border-primary-dark"> <img src="/docs/images/homepage/kubegateway.png" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="KubeGateway Logo" />
+					<div class="card-body bg-primary-dark">
+						<h5 class="card-title text-white section-head">KubeGateway</h5>
+						<p class="card-text text-white"> Specific Layer7 Gateway for kube-apiserver </p>
+					</div>
+				</div>
+				<div class="card border-primary-dark"> <img src="/docs/images/homepage/empty.svg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="KubeGateway Logo" />
+					<div class="card-body bg-primary-dark">
+						<h5 class="card-title text-white section-head">Godel Scheduler</h5>
+						<p class="card-text text-white"> Comming soon </p>
+					</div>
+				</div>
+				<!-- For future editors: If you are adding cards not in multiples of 3, wrap them in a 'card-columns' div
+						instead of card-deck. It will look more pleasing to the eye. -->
+			</div>
+		</section>
+	</div>
 </div>
-
-{{< /blocks/section >}}
+<div id="community">
+	<div class="contain">
+		<h4 class="section-head">Join our community</h4>
+		<section id="pageContent" style="padding:0;">
+			<div class="card-deck" style="padding: 0em 12em 0em 12em">
+				<div class="card border-primary-dark" style="border-style: none"> <img src="/docs/images/homepage/wechat-group.jpeg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="WeChat Group" />
+					<p>WeChat Group</p>
+				</div>
+				<div class="card border-primary-dark" style="border-style: none"> <img src="/docs/images/homepage/wechat-public.jpeg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="WeChat RSS" />
+					<p>WeChat Public Accounts</p>
+				</div>
+				<!-- For future editors: If you are adding cards not in multiples of 3, wrap them in a 'card-columns' div
+						instead of card-deck. It will look more pleasing to the eye. -->
+			</div>
+		</section>
+	</div>
+</div>
