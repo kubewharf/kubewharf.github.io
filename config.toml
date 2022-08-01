@@ -1,5 +1,6 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "KubeWharf"
+description = "KubeWharf by ByteDance"
 
 # Language settings
 contentDir = "content/en"
@@ -23,13 +24,34 @@ category = "categories"
 
 [params.taxonomy]
 # set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloud = ["tags", "categories"] 
+taxonomyCloud = ["tags", "categories"]
 
 # If used, must have same length as taxonomyCloud
-taxonomyCloudTitle = ["Tag Cloud", "Categories"] 
+taxonomyCloudTitle = ["Tag Cloud", "Categories"]
 
 # set taxonomyPageHeader = [] to hide taxonomies on the page headers
-taxonomyPageHeader = ["tags", "categories"] 
+taxonomyPageHeader = ["tags", "categories"]
+
+
+###############################################################################
+# Hugo - Top-level navigation (horizontal)
+###############################################################################
+[menu]
+  [[menu.main]]
+    name = "Documentation"
+    weight = -101
+    pre = "<i class='fas fa-book pr-2'></i>"
+    url = "/docs/"
+  [[menu.main]]
+    name = "Blog"
+    weight = -100
+    pre = "<i class='fas fa-rss pr-2'></i>"
+    url = "/blog/"
+  [[menu.main]]
+    name = "GitHub"
+    weight = -99
+    pre = "<i class='fab fa-github pr-2'></i>"
+    url = "https://github.com/kubewharf/"
 
 
 # Highlighting config
@@ -57,29 +79,20 @@ anchor = "smart"
 id = "UA-00000000-0"
 
 # Language configuration
-
 [languages]
-[languages.en]
-title = "Goldydocs"
-description = "A Docsy example site"
-languageName ="English"
-# Weight used for sorting.
-weight = 1
-[languages.no]
-title = "Goldydocs"
-description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
-
-[languages.fa]
-title = "اسناد گلدی"
-description = "یک نمونه برای پوسته داکسی"
-languageName ="فارسی"
-contentDir = "content/fa"
-time_format_default = "2006.01.02"
-time_format_blog = "2006.01.02"
+  [languages.en]
+    title = "KubeWharf"
+    description = "KubeWharf By ByteDance"
+    languageName ="English"
+    # weight used for sorting in the language menu
+    weight = 1
+  [languages.no]
+    title = "KubeWharf"
+    description = "KubeWharf by ByteDance"
+    languageName ="中文"
+    contentDir = "content/zh"
+    # weight used for sorting in the language menu
+    weight = 1
 
 [markup]
   [markup.goldmark]
@@ -98,7 +111,7 @@ time_format_blog = "2006.01.02"
 section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "The Docsy Authors"
+copyright = "The KubeWharf Authors"
 privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
@@ -108,13 +121,13 @@ privacy_policy = "https://policies.google.com/privacy"
 # This menu appears only if you have at least one [params.versions] set.
 version_menu = "Releases"
 
-# Flag used in the "version-banner" partial to decide whether to display a 
+# Flag used in the "version-banner" partial to decide whether to display a
 # banner on every page indicating that this is an archived version of the docs.
 # Set this flag to "true" if you want to display the banner.
 archived_version = false
 
 # The version number for the version of the docs represented in this doc set.
-# Used in the "version-banner" partial to display a version number for the 
+# Used in the "version-banner" partial to display a version number for the
 # current doc set.
 version = "0.0"
 
@@ -135,7 +148,7 @@ github_project_repo = "https://github.com/google/docsy"
 github_branch= "master"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d72aa9b2712488cc3"
+#gcs_engine_id = "d72aa9b2712488cc3"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
@@ -172,47 +185,30 @@ yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/i
 no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
-# If you want this feature, but occasionally need to remove the Reading time from a single page, 
+# If you want this feature, but occasionally need to remove the Reading time from a single page,
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
 enable = false
 
 [params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-  name = "User mailing list"
-  url = "https://example.org/mail"
-  icon = "fa fa-envelope"
-  desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-  name ="Twitter"
-  url = "https://example.org/twitter"
-  icon = "fab fa-twitter"
-  desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
-  name = "Stack Overflow"
-  url = "https://example.org/stack"
-  icon = "fab fa-stack-overflow"
-  desc = "Practical questions and curated answers"
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
-  name = "GitHub"
-  url = "https://github.com/google/docsy"
-  icon = "fab fa-github"
-  desc = "Development takes place here!"
-[[params.links.developer]]
-  name = "Slack"
-  url = "https://example.org/slack"
-  icon = "fab fa-slack"
-  desc = "Chat with other project developers"
-[[params.links.developer]]
-  name = "Developer mailing list"
-  url = "https://example.org/mail"
-  icon = "fa fa-envelope"
-  desc = "Discuss development issues around the project"
+  [[params.links.user]]
+    name = "Slack"
+    url = ""
+    icon = "fab fa-slack"
+    desc = "Join the KubeWharf Slack Workspace!"
+  [[params.links.user]]
+    name = "Mailing list"
+    url = ""
+    icon = "fa fa-envelope"
+    desc = "Join the KubeWharf Mailing List!"
+  [[params.links.user]]
+    name = "Weekly Community Call"
+    url = ""
+    icon = "fa fa-calendar"
+    desc = "Join the weekly KubeWharf Community Call!"
+
 
 # hugo module configuration
-
 [module]
   # uncomment line below for temporary local development of module
   # replacements = "github.com/google/docsy -> ../../docsy"
@@ -224,4 +220,4 @@ enable = false
     disable = false
   [[module.imports]]
     path = "github.com/google/docsy/dependencies"
-    disable = false    
+    disable = false
