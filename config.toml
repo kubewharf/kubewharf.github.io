@@ -81,7 +81,7 @@ anchor = "smart"
 # Language configuration
 [languages]
   [languages.en]
-    title = ""
+    title = "KubeWharf"
     description = "KubeWharf By ByteDance"
     languageName ="English"
     # weight used for sorting in the language menu
