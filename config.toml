@@ -38,18 +38,33 @@ taxonomyPageHeader = ["tags", "categories"]
 ###############################################################################
 [menu]
   [[menu.main]]
+    name = "Project"
+    weight = 1
+    pre = "<i class='fas fa-book pr-2'></i>"
+    url = "/project/"
+    [[menu.main]]
+    parent = "Project"
+    name = "Katalyst"
+    weight = 1
+    url = "https://github.com/kubewharf/katalyst-core"
+    [[menu.main]]
+    parent = "Project"
+    name = "KubeAdmiral"
+    weight = 2
+    url = "https://github.com/kubewharf/kubeadmiral"
+  [[menu.main]]
     name = "Documentation"
-    weight = -101
+    weight = 2
     pre = "<i class='fas fa-book pr-2'></i>"
     url = "/docs/"
   [[menu.main]]
     name = "Blog"
-    weight = -100
+    weight = 3
     pre = "<i class='fas fa-rss pr-2'></i>"
     url = "/blog/"
   [[menu.main]]
     name = "GitHub"
-    weight = -99
+    weight = 4
     pre = "<i class='fab fa-github pr-2'></i>"
     url = "https://github.com/kubewharf/"
 
@@ -82,17 +97,19 @@ anchor = "smart"
 [languages]
   [languages.en]
     title = "KubeWharf"
-    description = "KubeWharf By ByteDance"
     languageName ="English"
     # weight used for sorting in the language menu
     weight = 1
+    [languages.en.params]
+      description = "KubeWharf By ByteDance"
   [languages.no]
     title = ""
-    description = "KubeWharf by ByteDance"
     languageName ="中文"
     contentDir = "content/zh"
     # weight used for sorting in the language menu
     weight = 1
+    [languages.no.params]
+      description = "KubeWharf by ByteDance"
 
 [markup]
   [markup.goldmark]
