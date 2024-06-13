@@ -2,7 +2,7 @@
 title = "KubeWharf"
 +++
 
-{{<blocks/cover title="KubeWharf" image_anchor="center" color="dark">}}
+<!-- {{<blocks/cover title="KubeWharf" image_anchor="center" color="dark">}}
 <div class="mx-auto">
   <p class="lead mt-5">The Enhanced Toolkit for Kubernetes</p>
   <a
@@ -21,70 +21,95 @@ title = "KubeWharf"
     {{<blocks/link-down color="light">}}
   </div>
 </div>
-{{</blocks/cover>}}
+{{</blocks/cover>}} -->
+
+<script>
+	window.addEventListener('scroll', function() {
+		var scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop;
+		const topEle = document.getElementsByClassName('td-navbar-cover')[0];
+		// const firstLook = document.getElementById('overviewBg');
+		if (scrollTop > 0) {
+			topEle.setAttribute('style', 'background: linear-gradient(to right, #1759DD, #2465EA, #387BFD) !important');
+		} else {
+			topEle.setAttribute('style', 'background: transparent !important');
+		}
+	});
+</script>
+
+<div id="overviewBg">
+	<img src="docs/images/homepage/kubeWharfBg.svg" style="padding-left: 40px; width: 100%;">
+	<div class="buttonWrapper">
+		<a class="startButton" href="https://github.com/kubewharf" target="_blank">Get Start</a>
+		<a class="contributeButton" href="https://github.com/orgs/kubewharf/people" target="_blank">Contribute</a>
+	</div>
+</div>
 
 <div id="overview">
+	<div class="contain" style="background-image: url('./docs/images/homepage/bigLogo.svg'); background-repeat: no-repeat; background-position: center center; background-size: 244px 244px;">
+		<h4 class="section-head section-head-overview">What is KubeWharf?</h4>
+		<div class="section-content">
+			KubeWharf is an open source orgnization from ByteDance built on Kubernetes. It aims to supply open source solution to address key challenges of </br>
+			large-scale cloudnative situations, including scalability, stability, multi-tenancy isolation, resource efficiency and obersavability.
+		</div>
+		<img src="/docs/images/homepage/bytedance.png" class="card-img-top" draggable="false" style="width: 116px" alt="ByteDance Logo" />
+	</div>
+</div>
+<div id="Ecosystem">
 	<div class="contain">
-		<h4 class="section-head">What is KubeWharf?</h4>
-		<br> KubeWharf is an open source orgnization from ByteDance built on Kubernetes. </br>
-		It aims to supply open source solution to address key challenges of large-scale cloudnative situations, </br>
-		including scalability, stability, multi-tenancy isolation, resource efficiency and obersavability.
-		 </p> <img src="/docs/images/homepage/bytedance.png" class="card-img-top" draggable="false" style="padding: 1rem;width: 280px" alt="ByteDance Logo" /> </div>
+		<h4 class="section-head">Ecosystem</h4>
+		<div>
+			<img src="docs/images/homepage/ecosystem.png" width="1010px">
+		</div>
+	</div>
 </div>
 <div id="projects">
 	<div class="contain">
-		<h4 class="section-head" style="text-align: center;padding-top: 3em;padding-bottom: -1em;">Projects</h4>
-		<section id="pageContent" style="padding-top:2rem;">
-			<div class="card-deck">
-				<div class="card border-primary-dark"> <img src="/docs/images/homepage/empty.svg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="KubeBrain Logo" />
-					<div class="card-body bg-primary-dark">
-					 <a href="https://github.com/kubewharf/kubebrain" target="_blank" style="float: right;border-bottom: none;color: #999f9f !important;">
-					    <i class="fab fa-github pr-2" style=""></i>
-					 </a>
-					 <a href="/docs/kubebrain/" style="float:right;padding-right: 1em;border-bottom: none;color: #999f9f !important;">
-                        <i class="fas fa-book pr-1"></i>
-                     </a>
-						<h5 class="card-title text-white section-head">KubeBrain</h5>
-						<p class="card-text text-white"> A High Performance Metadata System for Kubernetes. </br>
-						</p>
-					</div>
+		<h4 class="section-head">Projects</h4>
+		<div id="pageContent" class="project-wrapper" style="width: 1010px;">
+			<a class="project-card" style="background-image: url('./docs/images/homepage/KubeBrainBg.png'); background-repeat: no-repeat; background-position: right center; background-size: 74px 164px;" href="https://github.com/kubewharf/kubebrain" target="_blank" >
+				<div class="image-part">
+					<img src="docs/images/homepage/KubeBrain.png" alt="KubeBrain Logo">
 				</div>
-				<div class="card border-primary-dark"> <img src="/docs/images/homepage/empty.svg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="KubeZoo Logo" />
-					<div class="card-body bg-primary-dark">
-					 <a href="https://github.com/kubewharf/kubezoo" target="_blank" style="float: right;border-bottom: none;color: #999f9f !important;">
-					    <i class="fab fa-github pr-2" style=""></i>
-					 </a>
-					 <a href="/docs/kubezoo/" style="float:right;padding-right: 1em;border-bottom: none;color: #999f9f !important;">
-                        <i class="fas fa-book pr-1"></i>
-                     </a>
-						<h5 class="card-title text-white section-head">
-            KubeZoo
-          </h5>
-						<p class="card-text text-white"> A Lightweight Kubernetes Multi-Tenancy Gateway </p>
-					</div>
+				<div class="title-part">KubeBrain</div>
+				<div class="desc-part">A High Performance Metadata System for Kubernetes. </div>
+			</a>
+			<a class="project-card" style="background-image: url('./docs/images/homepage/KubeAdmiralBg.png'); background-repeat: no-repeat; background-position: right center; background-size: 74px 164px;" href="https://github.com/kubewharf/kubeadmiral" target="_blank">
+				<div class="image-part">
+					<img src="docs/images/homepage/KubeAdmiral.png" alt="KubeAdmiral Logo">
 				</div>
-				<div class="card border-primary-dark"> <img src="/docs/images/homepage/empty.svg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="KubeGateway Logo" />
-					<div class="card-body bg-primary-dark">
-					 <a href="https://github.com/kubewharf/kubegateway" target="_blank" style="float: right;border-bottom: none;color: #999f9f !important;">
-					    <i class="fab fa-github pr-2" style=""></i>
-					 </a>
-					 <a href="/docs/kubegateway/" style="float:right;padding-right: 1em;border-bottom: none;color: #999f9f !important;">
-                        <i class="fas fa-book pr-1"></i>
-                     </a>
-						<h5 class="card-title text-white section-head">KubeGateway</h5>
-						<p class="card-text text-white"> Specific Layer7 Gateway for kube-apiserver </p>
-					</div>
+				<div class="title-part">KubeAdmiral</div>
+				<div class="desc-part">Specific Layer7 Gateway for kube-apiserver.</div>
+			</a>
+			<a class="project-card" style="background-image: url('./docs/images/homepage/KelemetryBg.png'); background-repeat: no-repeat; background-position: right center; background-size: 74px 164px;" href="https://github.com/kubewharf/kelemetry" target="_blank">
+				<div class="image-part">
+					<img src="docs/images/homepage/Kelemetry.png" alt="Kelemetry Logo">
 				</div>
-				<div class="card border-primary-dark"> <img src="/docs/images/homepage/empty.svg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="KubeGateway Logo" />
-					<div class="card-body bg-primary-dark">
-						<h5 class="card-title text-white section-head">Godel Scheduler</h5>
-						<p class="card-text text-white"> Unified online and offline scheduler. </br> Comming soon </p>
-					</div>
+				<div class="title-part">Kelemetry</div>
+				<div class="desc-part">Global control plane tracing for Kubernetes.</div>
+			</a>
+			<a class="project-card" style="background-image: url('./docs/images/homepage/katalystBg.png'); background-repeat: no-repeat; background-position: right center; background-size: 74px 164px;" href="https://github.com/kubewharf/katalyst-core" target="_blank">
+				<div class="image-part">
+					<img src="docs/images/homepage/katalyst.png" alt="katalyst Logo">
 				</div>
-				<!-- For future editors: If you are adding cards not in multiples of 3, wrap them in a 'card-columns' div
-						instead of card-deck. It will look more pleasing to the eye. -->
-			</div>
-		</section>
+				<div class="title-part">Katalyst</div>
+				<div class="desc-part">A High Performance Metadata System for Kubernetes.</div>
+			</a>
+			<a class="project-card" style="background-image: url('./docs/images/homepage/KubeGatewayBg.png'); background-repeat: no-repeat; background-position: right center; background-size: 74px 164px;" href="https://github.com/kubewharf/kubegateway" target="_blank">
+				<div class="image-part">
+					<img src="docs/images/homepage/KubeGateway.png" alt="KubeGateway Logo">
+				</div>
+				<div class="title-part">KubeGateway</div>
+				<div class="desc-part">Specific Layer7 Gateway for kube-apiserver.</div>
+			</a>
+			<a class="project-card" style="background-image: url('./docs/images/homepage/KubeZooBg.png'); background-repeat: no-repeat; background-position: right center; background-size: 74px 164px;" href="https://github.com/kubewharf/kubezoo" target="_blank">
+				<div class="image-part">
+					<img src="docs/images/homepage/KubeZoo.png" alt="KubeZoo Logo">
+				</div>
+				<div class="title-part">KubeZoo</div>
+				<div class="desc-part">a lightweight kubernetes multi-tenancy gateway.</div>
+			</a>
+		</div>
 	</div>
 </div>
 <div id="community">
@@ -92,15 +117,33 @@ title = "KubeWharf"
 		<h4 class="section-head">Join our community</h4>
 		<section id="pageContent" style="padding:0;">
 			<div class="card-deck" style="padding: 0em 12em 0em 12em">
-				<div class="card border-primary-dark" style="border-style: none"> <img src="/docs/images/homepage/wechat-group.jpeg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="WeChat Group" />
+				<div class="dpcol-center"> 
+					<img src="/docs/images/homepage/wechatGroup.jpeg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="WeChat Group" />
 					<p>WeChat Group</p>
 				</div>
-				<div class="card border-primary-dark" style="border-style: none"> <img src="/docs/images/homepage/wechat-public.jpeg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="WeChat RSS" />
+				<div class="dpcol-center">
+					<img src="/docs/images/homepage/wechatPublic.jpeg" class="card-img-top" draggable="false" style="padding: 2rem;height: 280px" alt="WeChat RSS" />
 					<p>WeChat Public Accounts</p>
 				</div>
 				<!-- For future editors: If you are adding cards not in multiples of 3, wrap them in a 'card-columns' div
 						instead of card-deck. It will look more pleasing to the eye. -->
 			</div>
 		</section>
+	</div>
+</div>
+<div id="bottom">
+	<img src="docs/images/homepage/bottomBg.png" style="width: 100%;">
+	<div class="content">
+		<div class="text">Katalyst & KubeAdmiral have been collected in CNCF (Cloud Native Computing Foundation) LandScape</div>
+		<div class="jumpProject">
+			<a class="button" href="https://github.com/kubewharf/katalyst-core" target="_blank">
+				<div class="project">Katalyst</div>
+				<img src="docs/images/homepage/subtract.png" class="jumpIcon">
+			</a>
+			<a class="button" href="https://github.com/kubewharf/kubeadmiral" target="_blank">
+				<div class="project">KubeAdmiral</div>
+				<img src="docs/images/homepage/subtract.png" class="jumpIcon">
+			</a>
+		</div>
 	</div>
 </div>
