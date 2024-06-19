@@ -7,7 +7,7 @@ weight: 2
 author: Gary Liu, ByteDance Softeware Engineer
 
 resources:
-- src: "**.{png,jpg}"
+- src: "**blog 2 banner.png"
   title: "Image #:counter"
   params:
     byline: "Photo: - / -"
