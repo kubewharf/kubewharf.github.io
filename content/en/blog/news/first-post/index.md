@@ -6,6 +6,11 @@ title: "Katalyst: A QoS-based resource management system for workload colocation
 linkTitle: "Katalyst: A QoS-based resource management system for workload colocation on kubernetes"
 description: "An introduction to Katalyst. Katalyst aims to provide a universal solution to help improve resource utilization and optimize the overall costs in the cloud. This is the core components in Katalyst system, including multiple agents and centralized components."
 author: Pengcheng Tang ([pendoragon](https://github.com/pendoragon))
+resources:
+- src: "blog 1 banner.png"
+  title: "Image #:counter"
+  params:
+    byline: "Photo: - / -"
 ---
 
 
