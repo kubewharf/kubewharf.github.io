@@ -8,7 +8,7 @@ author: Gary Liu, ByteDance Softeware Engineer
 
 ---
 
----
+
 Here's an image (`blog 2 banner.png`) that includes a byline and a caption.
 
 {{< imgproc sunset Fill "600x300" >}}
@@ -24,7 +24,7 @@ resources:
   params:
     byline: "/"
 ```
----
+
 
 Project link: [https://github.com/kubewharf/kubeadmiral](https://github.com/kubewharf/kubeadmiral)
 
