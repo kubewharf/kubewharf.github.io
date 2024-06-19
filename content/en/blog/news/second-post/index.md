@@ -11,10 +11,6 @@ author: Gary Liu, ByteDance Softeware Engineer
 
 Here's an image (`blog 2 banner.png`) that includes a byline and a caption.
 
-{{< imgproc sunset Fill "600x300" >}}
-Fetch and scale an image in the upcoming Hugo 0.43.
-{{< /imgproc >}}
-
 The front matter of this post specifies properties to be assigned to all image resources:
 
 ```
