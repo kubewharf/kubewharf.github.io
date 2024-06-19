@@ -6,18 +6,11 @@ description: "An introduction of KubeAdmiral"
 weight: 2
 author: Gary Liu, ByteDance Softeware Engineer
 
-
-Here's an image (`blog 2 banner.png`) that includes a byline and a caption.
-
-The front matter of this post specifies properties to be assigned to all image resources:
-
-```
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
   params:
-    byline: "/"
-```
+    byline: "Photo: - / -"
 ---
 
 
