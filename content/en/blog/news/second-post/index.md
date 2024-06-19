@@ -6,8 +6,6 @@ description: "An introduction of KubeAdmiral"
 weight: 2
 author: Gary Liu, ByteDance Softeware Engineer
 
----
-
 
 Here's an image (`blog 2 banner.png`) that includes a byline and a caption.
 
@@ -20,6 +18,7 @@ resources:
   params:
     byline: "/"
 ```
+---
 
 
 Project link: [https://github.com/kubewharf/kubeadmiral](https://github.com/kubewharf/kubeadmiral)
