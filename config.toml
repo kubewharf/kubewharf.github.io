@@ -46,17 +46,42 @@ taxonomyPageHeader = ["tags", "categories"]
     parent = "Project"
     name = "Katalyst"
     weight = 1
-    url = "https://github.com/kubewharf/katalyst-core"
+    url = "https://gokatalyst.io"
     [[menu.main]]
     parent = "Project"
     name = "KubeAdmiral"
     weight = 2
-    url = "https://github.com/kubewharf/kubeadmiral"
-  [[menu.main]]
-    name = "Documentation"
-    weight = 2
-    pre = "<i class='fas fa-book pr-2'></i>"
-    url = "/docs/"
+    url = "https://kubeadmiral.io"
+    [[menu.main]]
+    parent = "Project"
+    name = "KubeGateway"
+    weight = 3
+    url = "https://github.com/kubewharf/kubegateway"
+    [[menu.main]]
+    parent = "Project"
+    name = "KubeZoo"
+    weight = 4
+    url = "https://github.com/kubewharf/kubezoo"
+    [[menu.main]]
+    parent = "Project"
+    name = "KubeBrain"
+    weight = 5
+    url = "https://github.com/kubewharf/kubebrain"
+    [[menu.main]]
+    parent = "Project"
+    name = "Kelemetry"
+    weight = 6
+    url = "https://github.com/kubewharf/kelemetry"
+    [[menu.main]]
+    parent = "Project"
+    name = "Gödel"
+    weight = 7
+    url = "https://github.com/kubewharf/godel-scheduler"
+#  [[menu.main]]
+#    name = "Documentation"
+#    weight = 2
+#    pre = "<i class='fas fa-book pr-2'></i>"
+#    url = "/docs/"
   [[menu.main]]
     name = "Blog"
     weight = 3
@@ -102,14 +127,14 @@ anchor = "smart"
     weight = 1
     [languages.en.params]
       description = "KubeWharf By ByteDance"
-  [languages.no]
-    title = ""
-    languageName ="中文"
-    contentDir = "content/zh"
-    # weight used for sorting in the language menu
-    weight = 1
-    [languages.no.params]
-      description = "KubeWharf by ByteDance"
+#  [languages.no]
+#    title = ""
+#    languageName ="中文"
+#    contentDir = "content/zh"
+#    # weight used for sorting in the language menu
+#    weight = 1
+#    [languages.no.params]
+#      description = "KubeWharf by ByteDance"
 
 [markup]
   [markup.goldmark]
@@ -207,22 +232,22 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [params.ui.readingtime]
 enable = false
 
-[params.links]
-  [[params.links.user]]
-    name = "Slack"
-    url = ""
-    icon = "fab fa-slack"
-    desc = "Join the KubeWharf Slack Workspace!"
-  [[params.links.user]]
-    name = "Mailing list"
-    url = ""
-    icon = "fa fa-envelope"
-    desc = "Join the KubeWharf Mailing List!"
-  [[params.links.user]]
-    name = "Weekly Community Call"
-    url = ""
-    icon = "fa fa-calendar"
-    desc = "Join the weekly KubeWharf Community Call!"
+#[params.links]
+#  [[params.links.user]]
+#    name = "Slack"
+#    url = ""
+#    icon = "fab fa-slack"
+#    desc = "Join the KubeWharf Slack Workspace!"
+#  [[params.links.user]]
+#    name = "Mailing list"
+#    url = ""
+#    icon = "fa fa-envelope"
+#    desc = "Join the KubeWharf Mailing List!"
+#  [[params.links.user]]
+#    name = "Weekly Community Call"
+#    url = ""
+#    icon = "fa fa-calendar"
+#    desc = "Join the weekly KubeWharf Community Call!"
 
 
 # hugo module configuration
