@@ -161,6 +161,58 @@ nav.foldable-nav .ul-1 .with-child>input:checked~label:hover:before {
 
 #overviewBg {
   position: relative;
+
+  .overviewBox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 22%;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    color: #d3def9;
+    font-weight: 300;
+
+    .overviewContent {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .overviewHeader {
+      width: 440px;
+      padding-left: 7em;
+
+      .overviewTitle {
+        color: white;
+        font-size: 2.85em;
+        font-weight: 600;
+      }
+    }
+
+    .overviewDesc {
+      display: flex;
+      align-items: center;
+
+      .overviewDevider {
+        width: 2px;
+        height: 60px;
+        display: block;
+        margin-right: 48px;
+        border-radius: 1px;
+        background-color: rgba(201, 206, 213, 0.4);
+      }
+
+      p {
+        margin-bottom: unset;
+        width: 420px;
+        color: white;
+      }
+    }
+  }
+
+
   .buttonWrapper {
     position: absolute;
     border-radius: 10px;
@@ -348,4 +400,51 @@ nav.foldable-nav .ul-1 .with-child>input:checked~label:hover:before {
 }
 .cp {
   cursor: pointer;
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+  .overviewBox {
+    .overviewContent {
+      .overviewTitle {
+        font-size: 2.5em !important;
+      }
+    }
+
+    .overviewDevider {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .overviewBox {
+    .overviewContent {
+      flex-direction: column;
+      align-items: center !important;
+      text-align: center;
+    }
+
+    .overviewHeader {
+      .overviewTitle {
+        font-size: 2.5em !important;
+      }
+    }
+
+    .overviewDesc {
+      flex-direction: column;
+      align-items: center;
+
+      .overviewDevider {
+        margin: 4px 0;
+        width: 60px !important;
+        height: 2px !important;
+      }
+
+      p {
+        width: 70% !important;
+        margin-left: 7em;
+      }
+    }
+  }
+
 }
